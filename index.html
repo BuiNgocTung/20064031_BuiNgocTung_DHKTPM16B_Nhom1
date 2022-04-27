@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+        table col[class*="col-"] {
+            padding: 0 !important;
+        }
+        
+        .navbar-nav>.nav-item :hover {
+            background-color: rgba(255, 255, 255, 0.773);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="images/logo.PNG" alt="" srcset="">
+            </div>
+            <div class="col-md-10 text-center ">
+                <h3>ĐOÀN THANH NIÊN THÀNH PHỐ HỒ CHÍ MINH </h3>
+                <h5 class="text-danger">ĐOÀN THANH NIÊN TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH </h5>
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand  col-md-12 justify-content-start" style="background-color: rgb(177, 233, 248);">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a href="#" class="nav-link">TRANG CHỦ</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link">ĐOÀN THỂ</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link">SỰ KIỆN</a></li>
+                    <li class="nav-item"> <a href="#" class="dropdown btn  dropdown-toggle" data-toggle="dropdown">HOẠT ĐỘNG</a>
+                        <ul class="dropdown-menu " style="margin-left:300px ;">
+                            <li class="nav-item"> <a href="#" class="nav-link" id="btnDK">ĐĂNG KÍ</a></li>
+                            <li class="nav-item"> <a href="#" class="nav-link">THAM GIA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5">
+                <aside>
+                    <img src="images/ngayhoithanhnien.JPG" alt="" srcset="" class="rounded-circle" width="100%">
+                </aside>
+            </div>
+            <div class="col-md-5">
+                <aside>
+                    <br>
+
+                    <h4 style="color: rgb(233, 204, 117);">TIN NỔI BẬC</h4>
+                    <div class="col-md-7" style="background-color:rgb(177, 233, 248); ;">
+                        <ol type="I">
+                            <li>Mùa hè xanh</li>
+                            <li>Thanh niên tình nguyện</li>
+                            <li>Tấm lòng vàng</li>
+                            <li>Hiến máu nhân đạo</li>
+                            <li>Bảo vệ môi trường sạch</li>
+                            <li>Thi đua đạp thành tích chào mừng 26/3</li>
+                        </ol>
+                        <div>
+
+                </aside>
+                </div>
+                <BR></BR>
+
+                <div class="row">
+                    <footer class="col-md-12 text-center" style="margin-left:200px ;">
+                        <h4 style="color: rgb(233, 204, 117);">DANH SÁCH ĐĂNG KÝ HOẠT ĐỘNG MÀU HÈ XANH</h4>
+                    </footer>
+                </div>
+
+                <div class="col-md-12">
+
+                    <section>
+                        <table class="table table-striped" id="danhSach">
+                            <tr>
+                                <th>
+                                    <tr>
+                                        <td>STT</td>
+                                        <td>MÃ SV</td>
+                                        <td>Tên SV</td>
+                                        <td>Ngày tham gia </td>
+                                        <td>Email</td>
+                                        <td>Số điện thoại</td>
+                                    </tr>
+                                </th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1234567890</td>
+                                    <td>Tran Anh Khang</td>
+                                    <td>2021-06-25</td>
+                                    <td>thu@iuh.edu.vn</td>
+                                    <td>0979-788-849 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+                </div>
+                <div class="row">
+                    <footer class="col-md-12  text-right" style="background-color: rgb(151, 195, 245);">
+                        <a> @2020-2021 Đoàn thanh niên - Trường đại học Công nghiệp TP.Hồ Chí Minh</a>
+                    </footer>
+                </div>
+            </div>
+            <div class="modal fade" role="dialog" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center" style="color: red;">
+                            THÔNG TIN ĐĂNG KÝ
+                        </div>
+                        <div class="modal-body">
+                            <form role="form" class="form-horizontal" style="margin-top: 10px;">
+                                <label for="mssv" class="control-label col-xs-3">Mã sinh viên</label>
+                                <div class="col-xs-9">
+                                    <input type="text" id="msv" class="form-control">
+                                    <span class="text-danger" id="tbmsv">*</span>
+                                </div>
+
+                                <label for="Name" class="control-label col-xs-3">Họ Tên</label>
+                                <div class="col-xs-9">
+                                    <input type="text" id="Name" class="form-control">
+                                    <span class="text-danger" id="tbName">*</span>
+                                </div>
+
+
+
+                                <label for="NTT" class="control-lable col-xs-3">Ngày tham gia</label>
+                                <div class="col-xs-9">
+                                    <input type="date" id="NTG" class="form-control">
+                                    <span class="text-danger" style="color:red;" id="tbNTG">*</span>
+                                </div>
+
+                                <label for="NTT" class="control-lable col-xs-3">Email</label>
+                                <div class="col-xs-9">
+                                    <input type="text" id="email" class="form-control">
+                                    <span class="text-danger" style="color:red;" id="tbEmail">*</span>
+                                </div>
+
+                                <label for="SDT" class="control-lable col-xs-3">Số Điện Thoại</label>
+                                <div class="col-xs-9">
+                                    <input type="text" id="SDT" class="form-control">
+                                    <span class="text-danger" style="color:red;" id="tbSDT">*</span>
+                                </div>
+
+                            </form>
+                        </div>
+                        <button class="btn btn-sucess btn-group-justified" id="Save" type="button" style="color:white; background-color:red;width:100%">
+                            Lưu
+                         </button>
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>
